@@ -1,0 +1,49 @@
+
+
+const objtAnswer0 = {
+  id: '0',
+  optionSelected: 'option1',
+};
+const objtAnswer1 = {
+  id: '1',
+  optionSelected: 'option2',
+};
+const objtAnswer2 = {
+  id: '2',
+  optionSelected: 'option3',
+};
+const objtAnswer3 = {
+  id: '3',
+  optionSelected: 'option4',
+};
+type OptionType= {
+chosen:number
+}
+
+type ObjAnsweredOptionType= {
+  [key: string]:OptionType
+}
+function stadistics() {
+  const listaAnswer = [objtAnswer0, objtAnswer1, objtAnswer2, objtAnswer3];
+const objAnsweredOptions:ObjAnsweredOptionType={}
+  const listOptionsFiltered = listaAnswer.map(answer => answer.optionSelected);
+
+
+console.log(listOptionsFiltered)
+  for(let option of listOptionsFiltered)
+  {
+    console.log(option)
+    console.log(objAnsweredOptions.hasOwnProperty(option))
+if (objAnsweredOptions.hasOwnProperty(option)){
+objAnsweredOptions[option].chosen+=1
+
+  }else {
+    objAnsweredOptions[option]={chosen:1}
+  }
+ 
+  
+}
+ return objAnsweredOptions;
+}
+
+console.log(stadistics())
