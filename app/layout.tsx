@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
+
 import "./styles/globals.css";
 import Header from "./src/components/layouts/Header";
-import Footer from "./src/components/layouts/Footer";
+
 
 
 
@@ -19,14 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="h-full" lang="en">
       <body
-        className={` antialiased`}
+        className={`h-full antialiased`}
       >
-        <Header />
+       {/*/<Header />*/}
 
         {children}
-        <Footer />
+       
+       {/* //<Footer />*/}
       </body>
     </html>
   );

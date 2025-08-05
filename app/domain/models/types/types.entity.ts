@@ -1,4 +1,5 @@
 type SurveyType = {
+  id:string,
   title:string,
   description:string,
   creationDate:number,
@@ -21,7 +22,7 @@ type AnswerType = {
     surveyId:string,
     questionId:string,
     optionSelected:string, 
-    email:string,
+    email_number:string,
     date:number
 }
 

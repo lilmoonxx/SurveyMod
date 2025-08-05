@@ -1,19 +1,19 @@
 interface ResultI {
-addAnswer(newAnswer:Answer):void;
+addAnswer(newAnswer:AnswerType):void;
 getSurveyId():string;
-getAnswers():Answer[];
+getAnswers():AnswerType[];
 calculateStatistics(optionsAnswered:AnswerType[]):ObjAnsweredOptionType;
 validateAnswer(answer:string|number):boolean
 }
 
 class Result {
     //private answer:Answer[]
-    constructor(private surveyId:string, private answers:Answer[]){
+    constructor(private surveyId:string, private answers:AnswerType[]){
   
         
     }
 
-public addAnswer(newAnswer:Answer):void{
+public addAnswer(newAnswer:AnswerType):void{
 this.answers=[...this.answers, newAnswer]
 }
 
@@ -22,7 +22,7 @@ public getSurveyId():string{
     
 }
 
-public getAnswers():Answer[]{
+public getAnswers():AnswerType[]{
     return this.answers
 }
 
@@ -61,7 +61,9 @@ return false;
 return false;
 }
 
-
+public getDTO():ResultType{
+  return {surveyId:this.surveyId, answers:this.answers}
+}
 
 }
 

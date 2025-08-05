@@ -1,12 +1,16 @@
+
+import "./styles/globals.css";
+
 import Image from "next/image";
+import Survey from "./src/components/home/Survey";
 
 export default function Home() {
   return (
    <>
-   <main className="h-screen bg-gray-100">
-    <form className="">
-<h2 className="text-black" >SIGN IN</h2>
-    </form>
+   <main className="h-full">
+  
+<Survey/>
+
    </main>
   
    </>

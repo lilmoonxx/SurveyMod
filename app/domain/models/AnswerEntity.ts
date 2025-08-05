@@ -1,16 +1,19 @@
+import { nanoid } from 'nanoid';
+
 interface AnswerI{
     getId(): string;
     getSurveyId(): string;
     getQuestionId(): string;
     getOptionSelected(): string;
-    getEmail(): string;
+    getEmail_Number(): string;
     getDate(): number;
 }
 
 class Answer {
             constructor(private id:string, private surveyId:string,private questionId:string,
-                private optionSelected:string, private email:string,private date:number
+                private optionSelected:string, private email_number:string,private date:number
             ){
+                this.id=nanoid()
             }
           public getId(): string {
         return this.id;
@@ -28,8 +31,8 @@ class Answer {
         return this.optionSelected;
     }
 
-    public getEmail(): string {
-        return this.email;
+    public getEmail_Number(): string {
+        return this.email_number;
     }
 
     public getDate(): number {

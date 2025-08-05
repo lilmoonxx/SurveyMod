@@ -1,9 +1,11 @@
-export default function Header(){
-    return(
-    <header className="h-50 bg-gray-400 flex justify-center items-center">
-<div className="border-4 border-gray-800 px-10 py-6 text-center rounded-md">
-  <h1 className="text-gray-800  font-semibold">SURVEY</h1> 
-  </div>
-   </header>
-    )
+export default function Header() {
+    return (
+        <header className="shadow-2xl backdrop-blur-lg bg-fuchsia-950 bg-opacity-25 rounded-2xl  top-4 h-15 flex justify-center items-center border-4 border-violet-950 border-opacity-60">
+            <div className="px-3 py-5 text-center  rounded-md">
+                <h1 className="py-2 pt-0 text-8xl font-semibold text-stroke font-sans">
+                    SurveyApp
+                </h1>
+            </div>
+        </header>
+    );
 }

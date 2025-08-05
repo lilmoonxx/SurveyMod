@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Proyecto pa presentar",
   "license": "ISC",
-  "author":{
-    "email":"guillermo200367@gmail.com",
-    "name":"Guillermo Andres Cortes"
+  "author": {
+    "email": "guillermo200367@gmail.com",
+    "name": "Guillermo Andres Cortes"
   },
   "type": "commonjs",
   "main": "index.js",
@@ -17,22 +17,24 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
-    "firebase": "^11.9.1",
+    "firebase": "^11.10.0",
     "framer-motion": "^12.16.0",
-    "lucide-react": "^0.513.0", 
+    "lucide-react": "^0.513.0",
+    "nanoid": "^5.1.5",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "uuid": "^9.0.1" 
+    "react-router-dom": "^7.7.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "typescript": "^5"
   }
 }
