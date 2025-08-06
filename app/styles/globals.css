@@ -29,7 +29,7 @@ body {
 main {
 
   background: #210000;
-background: linear-gradient(0deg, rgb(176, 142, 171) 0%, rgb(237, 103, 210) 100%);
+background: linear-gradient(0deg, rgb(176, 142, 171) 0%, rgb(238, 119, 214) 100%);
 }
 .text-stroke {
     -webkit-text-stroke: 4px rgba(103, 58, 142, 0.644); 
