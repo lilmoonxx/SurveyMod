@@ -43,7 +43,7 @@ function Survey() {
         ) : null}
         
         {isEmailValid && (
-          <div className="w-full h-[500px] overflow-y-auto">
+          <div className="text-white w-full h-[500px] overflow-y-auto">
             <SurveyContainer email={emailInput} surveyId={surveyMock.id} onSurveyComplete={resetEmailInput} />
           </div>
         )}

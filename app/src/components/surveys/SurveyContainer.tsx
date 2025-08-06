@@ -159,7 +159,7 @@ export const surveyMock={
 function SurveyContainer({ email, surveyId, onSurveyComplete }: { email: string; surveyId: string; onSurveyComplete: () => void; }) {
   return (
     <>
-      <div className="w-full flex flex-col gap-3 justify-between items-center">
+      <div className="text-white w-full flex flex-col gap-3 justify-between items-center">
         <Header />
         <QuestionsList 
           email={email} 
