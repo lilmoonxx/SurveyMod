@@ -9,7 +9,7 @@ return(
 <div className=" -mt-6">
     <label className="flex flex-col items-center gap-6 ">
     <span className="font-semibold font-sans">    
-   LOG IN WITH YOUR EMAIL/PHONE NUMBER
+   SIGN IN WITH YOUR EMAIL/PHONE NUMBER
    </span>
     <input value={inputState} onChange={(e)=>setInputState(e.target.value)} className="text-gray-700"
     

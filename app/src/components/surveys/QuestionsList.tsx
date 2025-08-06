@@ -80,6 +80,7 @@ return isValid;
             saveResultToFirestore(surveyResult);
             onSurveyComplete(); // Call the function to reset the email input
         }
+        
     }
 
   return (

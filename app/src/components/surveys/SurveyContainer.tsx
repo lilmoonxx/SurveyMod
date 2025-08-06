@@ -166,7 +166,7 @@ function SurveyContainer({ email, surveyId, onSurveyComplete }: { email: string;
           surveyId={surveyId} 
           onSurveyComplete={onSurveyComplete} // Pasa la función aquí
         />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )
